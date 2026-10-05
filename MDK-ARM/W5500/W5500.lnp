@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"w5500\startup_stm32f103xe.o"
+"w5500\main.o"
+"w5500\stm32f1xx_it.o"
+"w5500\stm32f1xx_hal_msp.o"
+"w5500\w5500_port.o"
+"w5500\stm32f1xx_hal_gpio_ex.o"
+"w5500\stm32f1xx_hal_spi.o"
+"w5500\stm32f1xx_hal.o"
+"w5500\stm32f1xx_hal_rcc.o"
+"w5500\stm32f1xx_hal_rcc_ex.o"
+"w5500\stm32f1xx_hal_gpio.o"
+"w5500\stm32f1xx_hal_dma.o"
+"w5500\stm32f1xx_hal_cortex.o"
+"w5500\stm32f1xx_hal_pwr.o"
+"w5500\stm32f1xx_hal_flash.o"
+"w5500\stm32f1xx_hal_flash_ex.o"
+"w5500\stm32f1xx_hal_exti.o"
+"w5500\system_stm32f1xx.o"
+"w5500\socket.o"
+"w5500\wizchip_conf.o"
+"w5500\w5500.o"
+--strict --scatter "W5500\W5500.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "W5500.map" -o W5500\W5500.axf
